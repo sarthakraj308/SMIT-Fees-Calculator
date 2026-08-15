@@ -1,0 +1,227 @@
+{
+  "metadata": {
+    "project": "Fee Calculator",
+    "source": "Reporting_Instructions_2025.pdf",
+    "source_note": "Values transcribed from the provided image-based PDF pages 6-10.",
+    "currency_note": "Categories A, B, and C use INR. Category D uses USD for B.Tech course fee as shown in the PDF."
+  },
+  "branch_groups": {
+    "btech_cse": [
+      "cse",
+      "cse_aiml",
+      "cse_ds",
+      "cse_iot_csbct",
+      "csit",
+      "cst"
+    ],
+    "btech_other": [
+      "ce",
+      "ece",
+      "ee_vlsi",
+      "eee",
+      "me"
+    ],
+    "btech_lateral_cse": [
+      "le_cse",
+      "le_cse_aiml",
+      "le_cse_ds",
+      "le_cse_iot_csbct",
+      "le_cst",
+      "le_it"
+    ],
+    "btech_lateral_other": [
+      "le_ce",
+      "le_ece",
+      "le_ee_vlsi",
+      "le_eee",
+      "le_me"
+    ]
+  },
+  "categories": {
+    "category_a": {
+      "label": "Category A - General, North East, Defence, ParaMilitary Force, GTA & SAARC",
+      "currency": "INR",
+      "courses": {
+        "btech": {
+          "label": "B.Tech",
+          "branches": {
+            "cse": {"label": "CSE", "currency": "INR", "fees": {"lumpsum": 360400, "first_installment": 187200, "second_installment": 187200}, "scholarship_group": "btech_cse"},
+            "cse_aiml": {"label": "CSE (AI&ML)", "currency": "INR", "fees": {"lumpsum": 360400, "first_installment": 187200, "second_installment": 187200}, "scholarship_group": "btech_cse"},
+            "cse_ds": {"label": "CSE (DS)", "currency": "INR", "fees": {"lumpsum": 360400, "first_installment": 187200, "second_installment": 187200}, "scholarship_group": "btech_cse"},
+            "cse_iot_csbct": {"label": "CSE (IoT & CSBCT)", "currency": "INR", "fees": {"lumpsum": 360400, "first_installment": 187200, "second_installment": 187200}, "scholarship_group": "btech_cse"},
+            "csit": {"label": "CS&IT", "currency": "INR", "fees": {"lumpsum": 360400, "first_installment": 187200, "second_installment": 187200}, "scholarship_group": "btech_cse"},
+            "cst": {"label": "CST", "currency": "INR", "fees": {"lumpsum": 360400, "first_installment": 187200, "second_installment": 187200}, "scholarship_group": "btech_cse"},
+            "ce": {"label": "CE", "currency": "INR", "fees": {"lumpsum": 312700, "first_installment": 162850, "second_installment": 162850}, "scholarship_group": "btech_other"},
+            "ece": {"label": "ECE", "currency": "INR", "fees": {"lumpsum": 312700, "first_installment": 162850, "second_installment": 162850}, "scholarship_group": "btech_other"},
+            "ee_vlsi": {"label": "EE (VLSI D&T)", "currency": "INR", "fees": {"lumpsum": 312700, "first_installment": 162850, "second_installment": 162850}, "scholarship_group": "btech_other"},
+            "eee": {"label": "EEE", "currency": "INR", "fees": {"lumpsum": 312700, "first_installment": 162850, "second_installment": 162850}, "scholarship_group": "btech_other"},
+            "me": {"label": "ME", "currency": "INR", "fees": {"lumpsum": 312700, "first_installment": 162850, "second_installment": 162850}, "scholarship_group": "btech_other"}
+          }
+        },
+        "btech_lateral": {
+          "label": "B.Tech - Lateral Entry to 2nd Year",
+          "branches": {
+            "le_cse": {"label": "CSE", "currency": "INR", "fees": {"lumpsum": 360400, "first_installment": 187200, "second_installment": 187200}, "scholarship_group": "btech_lateral"},
+            "le_cse_aiml": {"label": "CSE (AI&ML)", "currency": "INR", "fees": {"lumpsum": 360400, "first_installment": 187200, "second_installment": 187200}, "scholarship_group": "btech_lateral"},
+            "le_cse_ds": {"label": "CSE (DS)", "currency": "INR", "fees": {"lumpsum": 360400, "first_installment": 187200, "second_installment": 187200}, "scholarship_group": "btech_lateral"},
+            "le_cse_iot_csbct": {"label": "CSE (IoT & CSBCT)", "currency": "INR", "fees": {"lumpsum": 360400, "first_installment": 187200, "second_installment": 187200}, "scholarship_group": "btech_lateral"},
+            "le_cst": {"label": "CST", "currency": "INR", "fees": {"lumpsum": 360400, "first_installment": 187200, "second_installment": 187200}, "scholarship_group": "btech_lateral"},
+            "le_it": {"label": "IT", "currency": "INR", "fees": {"lumpsum": 360400, "first_installment": 187200, "second_installment": 187200}, "scholarship_group": "btech_lateral"},
+            "le_ce": {"label": "CE", "currency": "INR", "fees": {"lumpsum": 312700, "first_installment": 162850, "second_installment": 162850}, "scholarship_group": "btech_lateral"},
+            "le_ece": {"label": "ECE", "currency": "INR", "fees": {"lumpsum": 312700, "first_installment": 162850, "second_installment": 162850}, "scholarship_group": "btech_lateral"},
+            "le_ee_vlsi": {"label": "EE (VLSI D&T)", "currency": "INR", "fees": {"lumpsum": 312700, "first_installment": 162850, "second_installment": 162850}, "scholarship_group": "btech_lateral"},
+            "le_eee": {"label": "EEE", "currency": "INR", "fees": {"lumpsum": 312700, "first_installment": 162850, "second_installment": 162850}, "scholarship_group": "btech_lateral"},
+            "le_me": {"label": "ME", "currency": "INR", "fees": {"lumpsum": 312700, "first_installment": 162850, "second_installment": 162850}, "scholarship_group": "btech_lateral"}
+          }
+        },
+        "bca": {"label": "BCA", "branches": {"general": {"label": "BCA", "currency": "INR", "fees": {"lumpsum": 116600, "first_installment": 60900, "second_installment": 60900}, "scholarship_group": "ug"}}},
+        "bpes": {"label": "Bachelor of Phy. Edu. & Sports (BPES)", "branches": {"general": {"label": "BPES", "currency": "INR", "fees": {"lumpsum": 58300, "first_installment": 30350, "second_installment": 30350}, "scholarship_group": "ug"}}},
+        "bsc_pcm": {"label": "B.Sc in Physics, Chemistry, Mathematics", "branches": {"general": {"label": "B.Sc PCM", "currency": "INR", "fees": {"lumpsum": 74200, "first_installment": 38600, "second_installment": 38600}, "scholarship_group": "ug"}}},
+        "bba": {"label": "BBA", "branches": {"general": {"label": "BBA", "currency": "INR", "fees": {"lumpsum": 148400, "first_installment": 77200, "second_installment": 77200}, "scholarship_group": "ug"}}},
+        "ba_psychology": {"label": "B.A. Psychology", "branches": {"general": {"label": "B.A. Psychology", "currency": "INR", "fees": {"lumpsum": 70000, "first_installment": 36300, "second_installment": 36300}, "scholarship_group": "ug"}}},
+        "bsc_applied_psychology": {"label": "B.Sc. Applied Psychology", "branches": {"general": {"label": "B.Sc. Applied Psychology", "currency": "INR", "fees": {"lumpsum": 74200, "first_installment": 38600, "second_installment": 38600}, "scholarship_group": "ug"}}},
+        "mtech": {"label": "M.Tech", "branches": {"general": {"label": "M.Tech", "currency": "INR", "fees": {"lumpsum": 201400, "first_installment": 104450, "second_installment": 104450}, "scholarship_group": "pg"}}},
+        "mca": {"label": "MCA", "branches": {"general": {"label": "MCA", "currency": "INR", "fees": {"lumpsum": 169600, "first_installment": 88300, "second_installment": 88300}, "scholarship_group": "pg"}}},
+        "mba": {"label": "MBA", "branches": {"general": {"label": "MBA", "currency": "INR", "fees": {"lumpsum": 330000, "first_installment": 171250, "second_installment": 171250}, "scholarship_group": "pg"}}},
+        "msc_pcm": {"label": "M.Sc in Phy, Chem & Maths", "branches": {"general": {"label": "M.Sc PCM", "currency": "INR", "fees": {"lumpsum": 111300, "first_installment": 57900, "second_installment": 57900}, "scholarship_group": "pg"}}}
+      }
+    },
+    "category_b": {
+      "label": "Category B - Sikkim Quota",
+      "currency": "INR",
+      "courses": {
+        "btech": {"label": "B.Tech", "branches": {
+          "cse": {"label": "CSE", "currency": "INR", "fees": {"lumpsum": 215600, "first_installment": 111800, "second_installment": 111800}, "scholarship_group": "btech_cse"},
+          "cse_aiml": {"label": "CSE (AI&ML)", "currency": "INR", "fees": {"lumpsum": 215600, "first_installment": 111800, "second_installment": 111800}, "scholarship_group": "btech_cse"},
+          "cse_ds": {"label": "CSE (DS)", "currency": "INR", "fees": {"lumpsum": 215600, "first_installment": 111800, "second_installment": 111800}, "scholarship_group": "btech_cse"},
+          "cse_iot_csbct": {"label": "CSE (IoT & CSBCT)", "currency": "INR", "fees": {"lumpsum": 215600, "first_installment": 111800, "second_installment": 111800}, "scholarship_group": "btech_cse"},
+          "csit": {"label": "CS&IT", "currency": "INR", "fees": {"lumpsum": 215600, "first_installment": 111800, "second_installment": 111800}, "scholarship_group": "btech_cse"},
+          "cst": {"label": "CST", "currency": "INR", "fees": {"lumpsum": 215600, "first_installment": 111800, "second_installment": 111800}, "scholarship_group": "btech_cse"},
+          "ce": {"label": "CE", "currency": "INR", "fees": {"lumpsum": 183500, "first_installment": 95500, "second_installment": 95500}, "scholarship_group": "btech_other"},
+          "ece": {"label": "ECE", "currency": "INR", "fees": {"lumpsum": 183500, "first_installment": 95500, "second_installment": 95500}, "scholarship_group": "btech_other"},
+          "ee_vlsi": {"label": "EE (VLSI D&T)", "currency": "INR", "fees": {"lumpsum": 183500, "first_installment": 95500, "second_installment": 95500}, "scholarship_group": "btech_other"},
+          "eee": {"label": "EEE", "currency": "INR", "fees": {"lumpsum": 183500, "first_installment": 95500, "second_installment": 95500}, "scholarship_group": "btech_other"},
+          "me": {"label": "ME", "currency": "INR", "fees": {"lumpsum": 183500, "first_installment": 95500, "second_installment": 95500}, "scholarship_group": "btech_other"}
+        }},
+        "btech_lateral": {"label": "B.Tech - Lateral Entry to 2nd Year", "branches": {
+          "le_cse": {"label": "CSE", "currency": "INR", "fees": {"lumpsum": 215600, "first_installment": 111800, "second_installment": 111800}, "scholarship_group": "btech_lateral"},
+          "le_cse_aiml": {"label": "CSE (AI&ML)", "currency": "INR", "fees": {"lumpsum": 215600, "first_installment": 111800, "second_installment": 111800}, "scholarship_group": "btech_lateral"},
+          "le_cse_ds": {"label": "CSE (DS)", "currency": "INR", "fees": {"lumpsum": 215600, "first_installment": 111800, "second_installment": 111800}, "scholarship_group": "btech_lateral"},
+          "le_cse_iot_csbct": {"label": "CSE (IoT & CSBCT)", "currency": "INR", "fees": {"lumpsum": 215600, "first_installment": 111800, "second_installment": 111800}, "scholarship_group": "btech_lateral"},
+          "le_cst": {"label": "CST", "currency": "INR", "fees": {"lumpsum": 215600, "first_installment": 111800, "second_installment": 111800}, "scholarship_group": "btech_lateral"},
+          "le_it": {"label": "IT", "currency": "INR", "fees": {"lumpsum": 215600, "first_installment": 111800, "second_installment": 111800}, "scholarship_group": "btech_lateral"},
+          "le_ce": {"label": "CE", "currency": "INR", "fees": {"lumpsum": 183500, "first_installment": 95500, "second_installment": 95500}, "scholarship_group": "btech_lateral"},
+          "le_ece": {"label": "ECE", "currency": "INR", "fees": {"lumpsum": 183500, "first_installment": 95500, "second_installment": 95500}, "scholarship_group": "btech_lateral"},
+          "le_ee_vlsi": {"label": "EE (VLSI D&T)", "currency": "INR", "fees": {"lumpsum": 183500, "first_installment": 95500, "second_installment": 95500}, "scholarship_group": "btech_lateral"},
+          "le_eee": {"label": "EEE", "currency": "INR", "fees": {"lumpsum": 183500, "first_installment": 95500, "second_installment": 95500}, "scholarship_group": "btech_lateral"},
+          "le_me": {"label": "ME", "currency": "INR", "fees": {"lumpsum": 183500, "first_installment": 95500, "second_installment": 95500}, "scholarship_group": "btech_lateral"}
+        }},
+        "bca": {"label": "BCA", "branches": {"general": {"label": "BCA", "currency": "INR", "fees": {"lumpsum": 74900, "first_installment": 39050, "second_installment": 39050}, "scholarship_group": "ug"}}},
+        "bpes": {"label": "Bachelor of Phy. Edu. & Sports (BPES)", "branches": {"general": {"label": "BPES", "currency": "INR", "fees": {"lumpsum": 37600, "first_installment": 19950, "second_installment": 19950}, "scholarship_group": "ug"}}},
+        "bsc_pcm": {"label": "B.Sc in Physics, Chemistry, Mathematics", "branches": {"general": {"label": "B.Sc PCM", "currency": "INR", "fees": {"lumpsum": 38350, "first_installment": 19925, "second_installment": 19925}, "scholarship_group": "ug"}}},
+        "bba": {"label": "BBA", "branches": {"general": {"label": "BBA", "currency": "INR", "fees": {"lumpsum": 76300, "first_installment": 39750, "second_installment": 39750}, "scholarship_group": "ug"}}},
+        "ba_psychology": {"label": "B.A. Psychology", "branches": {"general": {"label": "B.A. Psychology", "currency": "INR", "fees": {"lumpsum": 35000, "first_installment": 18100, "second_installment": 18100}, "scholarship_group": "ug"}}},
+        "bsc_applied_psychology": {"label": "B.Sc. Applied Psychology", "branches": {"general": {"label": "B.Sc. Applied Psychology", "currency": "INR", "fees": {"lumpsum": 38400, "first_installment": 19950, "second_installment": 19950}, "scholarship_group": "ug"}}},
+        "mtech": {"label": "M.Tech", "branches": {"general": {"label": "M.Tech", "currency": "INR", "fees": {"lumpsum": 121100, "first_installment": 62800, "second_installment": 62800}, "scholarship_group": "pg"}}},
+        "mca": {"label": "MCA", "branches": {"general": {"label": "MCA", "currency": "INR", "fees": {"lumpsum": 97500, "first_installment": 50825, "second_installment": 50825}, "scholarship_group": "pg"}}},
+        "mba": {"label": "MBA", "branches": {"general": {"label": "MBA", "currency": "INR", "fees": {"lumpsum": 139350, "first_installment": 72600, "second_installment": 72600}, "scholarship_group": "pg"}}},
+        "msc_pcm": {"label": "M.Sc in Phy, Chem & Maths", "branches": {"general": {"label": "M.Sc PCM", "currency": "INR", "fees": {"lumpsum": 64900, "first_installment": 33700, "second_installment": 33700}, "scholarship_group": "pg"}}}
+      }
+    },
+    "category_c": {
+      "label": "Category C - Non SAARC",
+      "currency": "INR",
+      "courses": {
+        "btech": {"label": "B.Tech", "branches": {
+          "cse": {"label": "CSE", "currency": "INR", "fees": {"lumpsum": 450500, "first_installment": 234300, "second_installment": 234300}, "scholarship_group": "btech_cse"},
+          "cse_aiml": {"label": "CSE (AI&ML)", "currency": "INR", "fees": {"lumpsum": 450500, "first_installment": 234300, "second_installment": 234300}, "scholarship_group": "btech_cse"},
+          "cse_ds": {"label": "CSE (DS)", "currency": "INR", "fees": {"lumpsum": 450500, "first_installment": 234300, "second_installment": 234300}, "scholarship_group": "btech_cse"},
+          "cse_iot_csbct": {"label": "CSE (IoT & CSBCT)", "currency": "INR", "fees": {"lumpsum": 450500, "first_installment": 234300, "second_installment": 234300}, "scholarship_group": "btech_cse"},
+          "csit": {"label": "CS&IT", "currency": "INR", "fees": {"lumpsum": 450500, "first_installment": 234300, "second_installment": 234300}, "scholarship_group": "btech_cse"},
+          "cst": {"label": "CST", "currency": "INR", "fees": {"lumpsum": 450500, "first_installment": 234300, "second_installment": 234300}, "scholarship_group": "btech_cse"},
+          "ce": {"label": "CE", "currency": "INR", "fees": {"lumpsum": 390900, "first_installment": 203300, "second_installment": 203300}, "scholarship_group": "btech_other"},
+          "ece": {"label": "ECE", "currency": "INR", "fees": {"lumpsum": 390900, "first_installment": 203300, "second_installment": 203300}, "scholarship_group": "btech_other"},
+          "ee_vlsi": {"label": "EE (VLSI D&T)", "currency": "INR", "fees": {"lumpsum": 390900, "first_installment": 203300, "second_installment": 203300}, "scholarship_group": "btech_other"},
+          "eee": {"label": "EEE", "currency": "INR", "fees": {"lumpsum": 390900, "first_installment": 203300, "second_installment": 203300}, "scholarship_group": "btech_other"},
+          "me": {"label": "ME", "currency": "INR", "fees": {"lumpsum": 390900, "first_installment": 203300, "second_installment": 203300}, "scholarship_group": "btech_other"}
+        }},
+        "btech_lateral": {"label": "B.Tech - Lateral Entry to 2nd Year", "branches": {
+          "le_cse": {"label": "CSE", "currency": "INR", "fees": {"lumpsum": 450500, "first_installment": 234300, "second_installment": 234300}, "scholarship_group": "btech_lateral"},
+          "le_cse_aiml": {"label": "CSE (AI&ML)", "currency": "INR", "fees": {"lumpsum": 450500, "first_installment": 234300, "second_installment": 234300}, "scholarship_group": "btech_lateral"},
+          "le_cse_ds": {"label": "CSE (DS)", "currency": "INR", "fees": {"lumpsum": 450500, "first_installment": 234300, "second_installment": 234300}, "scholarship_group": "btech_lateral"},
+          "le_cse_iot_csbct": {"label": "CSE (IoT & CSBCT)", "currency": "INR", "fees": {"lumpsum": 450500, "first_installment": 234300, "second_installment": 234300}, "scholarship_group": "btech_lateral"},
+          "le_cst": {"label": "CST", "currency": "INR", "fees": {"lumpsum": 450500, "first_installment": 234300, "second_installment": 234300}, "scholarship_group": "btech_lateral"},
+          "le_it": {"label": "IT", "currency": "INR", "fees": {"lumpsum": 450500, "first_installment": 234300, "second_installment": 234300}, "scholarship_group": "btech_lateral"},
+          "le_ce": {"label": "CE", "currency": "INR", "fees": {"lumpsum": 390900, "first_installment": 203300, "second_installment": 203300}, "scholarship_group": "btech_lateral"},
+          "le_ece": {"label": "ECE", "currency": "INR", "fees": {"lumpsum": 390900, "first_installment": 203300, "second_installment": 203300}, "scholarship_group": "btech_lateral"},
+          "le_ee_vlsi": {"label": "EE (VLSI D&T)", "currency": "INR", "fees": {"lumpsum": 390900, "first_installment": 203300, "second_installment": 203300}, "scholarship_group": "btech_lateral"},
+          "le_eee": {"label": "EEE", "currency": "INR", "fees": {"lumpsum": 390900, "first_installment": 203300, "second_installment": 203300}, "scholarship_group": "btech_lateral"},
+          "le_me": {"label": "ME", "currency": "INR", "fees": {"lumpsum": 390900, "first_installment": 203300, "second_installment": 203300}, "scholarship_group": "btech_lateral"}
+        }},
+        "bca": {"label": "BCA", "branches": {"general": {"label": "BCA", "currency": "INR", "fees": {"lumpsum": 145800, "first_installment": 75800, "second_installment": 75800}, "scholarship_group": "ug_international"}}},
+        "bpes": {"label": "Bachelor of Phy. Edu. & Sports (BPES)", "branches": {"general": {"label": "BPES", "currency": "INR", "fees": {"lumpsum": 72900, "first_installment": 37900, "second_installment": 37900}, "scholarship_group": "ug_international"}}},
+        "bsc_pcm": {"label": "B.Sc in Physics, Chemistry, Mathematics", "branches": {"general": {"label": "B.Sc PCM", "currency": "INR", "fees": {"lumpsum": 92800, "first_installment": 48300, "second_installment": 48300}, "scholarship_group": "ug_international"}}},
+        "bba": {"label": "BBA", "branches": {"general": {"label": "BBA", "currency": "INR", "fees": {"lumpsum": 185500, "first_installment": 96500, "second_installment": 96500}, "scholarship_group": "ug_international"}}},
+        "ba_psychology": {"label": "B.A. Psychology", "branches": {"general": {"label": "B.A. Psychology", "currency": "INR", "fees": {"lumpsum": 87500, "first_installment": 45544, "second_installment": 45544}, "scholarship_group": "ug_international"}}},
+        "bsc_applied_psychology": {"label": "B.Sc. Applied Psychology", "branches": {"general": {"label": "B.Sc. Applied Psychology", "currency": "INR", "fees": {"lumpsum": 92800, "first_installment": 48300, "second_installment": 48300}, "scholarship_group": "ug_international"}}},
+        "mtech": {"label": "M.Tech", "branches": {"general": {"label": "M.Tech", "currency": "INR", "fees": {"lumpsum": 251800, "first_installment": 130900, "second_installment": 130900}, "scholarship_group": "pg_international"}}},
+        "mca": {"label": "MCA", "branches": {"general": {"label": "MCA", "currency": "INR", "fees": {"lumpsum": 212000, "first_installment": 110200, "second_installment": 110200}, "scholarship_group": "pg_international"}}},
+        "mba": {"label": "MBA", "branches": {"general": {"label": "MBA", "currency": "INR", "fees": {"lumpsum": 412500, "first_installment": 214500, "second_installment": 214500}, "scholarship_group": "pg_international"}}},
+        "msc_pcm": {"label": "M.Sc in Phy, Chem & Maths", "branches": {"general": {"label": "M.Sc PCM", "currency": "INR", "fees": {"lumpsum": 139100, "first_installment": 72300, "second_installment": 72300}, "scholarship_group": "pg_international"}}}
+      }
+    },
+    "category_d": {
+      "label": "Category D - NRI / Foreign",
+      "currency": "USD",
+      "courses": {
+        "btech": {
+          "label": "B.Tech",
+          "branches": {
+            "cse": {"label": "CSE", "currency": "USD", "fees": {"lumpsum": 7600, "first_installment": 3900, "second_installment": 3900}, "scholarship_group": "btech_cse_international"},
+            "cse_aiml": {"label": "CSE (AI&ML)", "currency": "USD", "fees": {"lumpsum": 7600, "first_installment": 3900, "second_installment": 3900}, "scholarship_group": "btech_other_international"},
+            "cse_ds": {"label": "CSE (DS)", "currency": "USD", "fees": {"lumpsum": 7600, "first_installment": 3900, "second_installment": 3900}, "scholarship_group": "btech_other_international"},
+            "cse_iot_csbct": {"label": "CSE (IoT & CSBCT)", "currency": "USD", "fees": {"lumpsum": 7600, "first_installment": 3900, "second_installment": 3900}, "scholarship_group": "btech_other_international"},
+            "ece": {"label": "ECE", "currency": "USD", "fees": {"lumpsum": 7600, "first_installment": 3900, "second_installment": 3900}, "scholarship_group": "btech_other_international"},
+            "ee_vlsi": {"label": "EE (VLSI D&T)", "currency": "USD", "fees": {"lumpsum": 7600, "first_installment": 3900, "second_installment": 3900}, "scholarship_group": "btech_other_international"},
+            "eee": {"label": "EEE", "currency": "USD", "fees": {"lumpsum": 7600, "first_installment": 3900, "second_installment": 3900}, "scholarship_group": "btech_other_international"},
+            "it": {"label": "IT", "currency": "USD", "fees": {"lumpsum": 7600, "first_installment": 3900, "second_installment": 3900}, "scholarship_group": "btech_other_international"},
+            "me": {"label": "ME", "currency": "USD", "fees": {"lumpsum": 7600, "first_installment": 3900, "second_installment": 3900}, "scholarship_group": "btech_other_international"},
+            "ce": {"label": "CE", "currency": "USD", "fees": {"lumpsum": 7600, "first_installment": 3900, "second_installment": 3900}, "scholarship_group": "btech_other_international"}
+          }
+        }
+      }
+    }
+  },
+  "hostel": {
+    "rooms": {
+      "double_non_ac": {"label": "Double Sharing (Non-AC)", "rent": 49300},
+      "single_non_ac": {"label": "Single (Non-AC)", "rent": 71400},
+      "double_ac": {"label": "Double Sharing (AC)", "rent": 88200},
+      "single_ac": {"label": "Single (AC)", "rent": 143800}
+    },
+    "mess_options": {
+      "opted_in": {"label": "Mess Opted In", "mess_and_utility_deposit": 102000},
+      "opted_out": {"label": "Mess Opted Out", "mess_and_utility_deposit": 18000}
+    }
+  },
+  "scholarships": {
+    "none": {"label": "No Scholarship", "groups": ["all"], "percentages": [0]},
+    "merit_pcm_btech": {"label": "Merit Scholarship - B.Tech PCM", "groups": ["btech_cse", "btech_other"], "percentages": [40, 30, 20, 10]},
+    "merit_jee_btech": {"label": "Merit Scholarship - B.Tech JEE", "groups": ["btech_cse", "btech_other"], "percentages": [40, 35, 30, 25, 20]},
+    "sibling_alumni": {"label": "Sibling / Alumni Scholarship", "groups": ["all"], "percentages": [20]},
+    "ug_scholarship": {"label": "UG Scholarship", "groups": ["ug", "ug_international"], "percentages": [15, 10]},
+    "pg_scholarship": {"label": "PG Scholarship", "groups": ["pg", "pg_international"], "percentages": [20, 10]},
+    "divyang": {"label": "Special Scholarship - Divyang", "groups": ["all"], "percentages": [40, 20]},
+    "single_girl_child": {"label": "Special Scholarship - Single Girl Child", "groups": ["all"], "percentages": [20]},
+    "single_mother": {"label": "Special Scholarship - Single Mother", "groups": ["all"], "percentages": [20]},
+    "sportsman": {"label": "Special Scholarship - Sportsman", "groups": ["all"], "percentages": [30]},
+    "competition_winner": {"label": "Special Scholarship - Competition Winner", "groups": ["all"], "percentages": [20]},
+    "state_topper": {"label": "Special Scholarship - State Topper", "groups": ["all"], "percentages": [40]},
+    "international_ug_pg": {"label": "International Candidates - UG & PG except B.Tech", "groups": ["ug_international", "pg_international"], "percentages": [20]},
+    "international_btech_except_cse": {"label": "International Candidates - B.Tech except CSE", "groups": ["btech_other_international"], "percentages": [50, 20]},
+    "international_btech_cse": {"label": "International Candidates - B.Tech CSE", "groups": ["btech_cse_international"], "percentages": [20]},
+    "lateral_entry": {"label": "Lateral Entry Scholarship", "groups": ["btech_lateral"], "percentages": [50, 40, 30, 20]},
+    "armed_forces_ug": {"label": "Armed Forces Scholarship - Undergraduate", "groups": ["btech_cse", "btech_other", "btech_lateral", "ug", "ug_international"], "percentages": [50, 40, 30, 25, 20, 10, 5]},
+    "armed_forces_pg": {"label": "Armed Forces Scholarship - Postgraduate", "groups": ["pg", "pg_international"], "percentages": [50, 40, 30, 20, 10]}
+  }
+}

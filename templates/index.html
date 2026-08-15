@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fee Calculator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  </head>
+  <body>
+    <main class="shell">
+      <section class="panel intro-panel">
+        <div class="heading">
+          <p>Welcome</p>
+          <h1>Welcome to the SMIT Fee Calculator</h1>
+        </div>
+        <p>
+          The <strong>SMIT Fee Calculator</strong> helps students quickly estimate their fees and view a
+          detailed fee breakdown. While every effort has been made to ensure accuracy, users are advised
+          to verify the final fee details with the SMIT Finance Department before making any payment or
+          financial decision.
+        </p>
+      </section>
+
+      <section class="panel">
+        <div class="heading">
+          <p>Student Fee Planner</p>
+          <h1>Fee Calculator</h1>
+        </div>
+
+        {% if error %}
+          <div class="error banner">{{ error }}</div>
+        {% endif %}
+
+        <form id="fee-form" class="form-grid" action="{{ url_for('result') }}" method="post">
+          <label>
+            Category
+            <select id="category" name="category" required></select>
+          </label>
+
+          <label>
+            Course
+            <select id="course" name="course" required></select>
+          </label>
+
+          <label>
+            Branch
+            <select id="branch" name="branch" required></select>
+          </label>
+
+          <label>
+            Student Type
+            <select id="student_type" name="student_type" required>
+              <option value="day_scholar">Day-Scholar</option>
+              <option value="hosteller">Hosteller</option>
+            </select>
+          </label>
+
+          <label>
+            Room Category
+            <select id="room_category" name="room_category"></select>
+          </label>
+
+          <label>
+            Mess
+            <select id="mess_option" name="mess_option"></select>
+          </label>
+
+          <label>
+            Eligible for Scholarship
+            <select id="scholarship_eligible" name="scholarship_eligible">
+              <option value="no">No</option>
+              <option value="yes">Yes</option>
+            </select>
+          </label>
+
+          <label>
+            Scholarship Type
+            <select id="scholarship_type" name="scholarship_type"></select>
+          </label>
+
+          <label>
+            Scholarship %
+            <select id="scholarship_percent" name="scholarship_percent"></select>
+          </label>
+
+          <label>
+            Payment Mode
+            <select id="payment_mode" name="payment_mode" required>
+              <option value="lumpsum">Lump Sum</option>
+              <option value="installments">Installments</option>
+            </select>
+          </label>
+
+          <button type="submit">Calculate Fee</button>
+        </form>
+      </section>
+
+      {% include "_info_footer.html" %}
+    </main>
+
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+  </body>
+</html>

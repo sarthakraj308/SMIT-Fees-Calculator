@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calculated Fee</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  </head>
+  <body>
+    <main class="shell result-shell">
+      <section class="panel">
+        <div class="result-header">
+          <div class="heading">
+            <p>Calculated Fee</p>
+            <h1>Fee Details</h1>
+          </div>
+          <button class="pdf-button" type="button" onclick="window.print()" aria-label="Save result as PDF">
+            <span class="pdf-icon" aria-hidden="true">PDF</span>
+            Save as PDF
+          </button>
+        </div>
+
+        <div class="summary-grid">
+          {% for label, value in [
+            ("Category", result.selected.category),
+            ("Course", result.selected.course),
+            ("Branch", result.selected.branch),
+            ("Student Type", result.selected.student_type),
+            ("Room Category", result.selected.room_category),
+            ("Mess", result.selected.mess),
+            ("Scholarship", result.selected.scholarship),
+            ("Scholarship %", result.scholarship_percent ~ "%"),
+            ("Payment Mode", result.payment_mode)
+          ] %}
+            <div class="summary-item">
+              <span>{{ label }}</span>
+              <strong>{{ value }}</strong>
+            </div>
+          {% endfor %}
+        </div>
+      </section>
+
+      <section class="result-panel">
+        <h2>Fee Breakdown</h2>
+
+        {% if result.payment_mode == "Installments" %}
+          <h3>1st Semester</h3>
+          {% for item in result.first_semester["items"] %}
+            <div class="line-item {% if item.muted %}muted-row{% endif %}">
+              <span>{{ item.label }}</span>
+              <strong>{{ item.amount|currency_amount(result.currency) }}</strong>
+            </div>
+          {% endfor %}
+          <div class="total">
+            <span>1st Semester Total</span>
+            <strong>{{ result.first_semester.total|currency_amount(result.currency) }}</strong>
+          </div>
+
+          <h3>2nd Semester</h3>
+          {% for item in result.second_semester["items"] %}
+            <div class="line-item {% if item.muted %}muted-row{% endif %}">
+              <span>{{ item.label }}</span>
+              <strong>{{ item.amount|currency_amount(result.currency) }}</strong>
+            </div>
+          {% endfor %}
+          <div class="total">
+            <span>2nd Semester Total</span>
+            <strong>{{ result.second_semester.total|currency_amount(result.currency) }}</strong>
+          </div>
+        {% else %}
+          {% for item in result["items"] %}
+            <div class="line-item {% if item.muted %}muted-row{% endif %}">
+              <span>{{ item.label }}</span>
+              <strong>{{ item.amount|currency_amount(result.currency) }}</strong>
+            </div>
+          {% endfor %}
+        {% endif %}
+
+        <div class="grand-total">
+          <span>Grand Total</span>
+          <strong>{{ result.total|currency_amount(result.currency) }}</strong>
+        </div>
+
+        <a class="back-link" href="{{ url_for('index') }}">Calculate another fee</a>
+      </section>
+
+      {% with show_calculator_link=true %}
+        {% include "_info_footer.html" %}
+      {% endwith %}
+    </main>
+  </body>
+</html>
